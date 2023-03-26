@@ -1,0 +1,19 @@
+<div class="body">
+  <nav class="nav-log" id="naved">
+    <h1>WELCOME</h1>
+  </nav>
+  <section class="form-login">
+      <form id="login-form" >
+        <div id="error-message">{{errorMessage}}</div><br>
+        <input type="text" name="username" placeholder="Uporabniško ime" class="input" [(ngModel)]="username"><br>
+        <input type="password" name="password" placeholder="Geslo" class="input" [(ngModel)]="password"><br>
+        <input type="submit" value="Prijava" class="submit-btn" (click)="login()">
+  </form>
+  </section>
+  <section class="img-container">
+  <img src="http://www.scv.si/wp-content/themes/yoo_master2_wp/images/ssgo.svg" alt="ssgo" height="100px" width="100px" id="zelena">
+  <img src="http://www.scv.si/wp-content/themes/yoo_master2_wp/images/ers.svg" alt="ers" height="100px" width="100px" id="modra">
+  <img src="http://www.scv.si/wp-content/themes/yoo_master2_wp/images/ssd.svg" alt="ssd" height="100px" width="100px" id="roza">
+  <img src="http://www.scv.si/wp-content/themes/yoo_master2_wp/images/gim.svg" alt="ers" height="100px" width="100px" id="rumena">
+  </section>
+</div>

@@ -1,0 +1,114 @@
+$color-bg: #eaeaea;
+$default-color: #ed1164;
+$ssgo-color: #a9d046;
+$ers-color: #0094d9;
+$ssd-color: #ee5ba0;
+$gim-color: #ffca05;
+$ruler: 16px;
+$color-shadow: #BABECC;
+$color-white: #FFF;
+
+.body{
+    margin: 0;
+    background-color:$color-bg;
+    height: 100%; 
+    width: 100%;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.body, p, input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: $ruler;
+}
+.nav-log{
+    background-color: $color-bg;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 12%;
+    text-align: center;
+}
+h1{
+    position:relative;
+    font-size: $ruler*4;
+    margin-top: 1%;
+    font-weight: lighter;
+}
+.img-container{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form-login{
+    padding: 15%;
+    height: 20%;
+}
+.input{
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-size: $ruler*1.5;
+    border-radius: $ruler*20;
+    background-color:$color-bg;
+    text-shadow: 1px 1px 0 $color-white;
+    margin-right: $ruler/2;
+    box-shadow:  inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+    width: 40%;
+    height: 60px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    margin-bottom: 50px;
+
+    &:focus {
+      box-shadow:  inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+}
+}
+.submit-btn{
+    border: 0;
+    outline: 0;
+    font-size: $ruler*1.5;
+    border-radius: $ruler*20;
+    padding: $ruler;
+    width: 20%;
+    background-color:$color-bg;
+    text-shadow: 1px 1px 0 $color-white;
+    color:#61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px $color-white,  5px 5px 20px $color-shadow;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    
+    &:hover {
+      box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+    }
+    
+    &:active {
+      box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+}
+#error-message{
+    color: red;
+    font-size: $ruler*1.5;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    position: relative;
+}
+.valid-message{
+    color: green;
+    font-size: $ruler*1.5;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
